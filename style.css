@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg, #ffffff);
+    color: var(--text, #000000);
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--brand, #6200ea);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section#intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section#cast article {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section#cast article:hover {
+    transform: scale(1.02);
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+aside {
+    background-color: var(--brand, #6200ea);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+button#likeButton {
+    background-color: white;
+    color: var(--brand, #6200ea);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#likeButton:hover {
+    background-color: #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    margin-top: 2rem;
+}
+
+
+.theme-dark {
+    --bg: #1e1e1e;
+    --text: #f5f5f5;
+    --brand: #ff9800;
+}
+
+.theme-dark header,
+.theme-dark aside {
+    background-color: var(--brand);
+    color: var(--text);
+}
+
+.theme-dark nav a {
+    color: var(--text);
+}
+
+.theme-dark section#cast article {
+    background-color: #2c2c2c;
+    color: var(--text);
+}
+
+.theme-dark footer {
+    background-color: #333;
+    color: var(--text);
+}
